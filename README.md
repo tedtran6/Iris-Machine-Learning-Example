@@ -5,7 +5,7 @@ This project exercises simple Machine Learning using the Iris dataset in using D
 The classifiers that I create are:
 
 * A Random Classifier, which simply selects a random label and uses that as the prediction.
-* A Nearest Neighbor Classifier, which uses the euclidean distance formula.
+* A Nearest Neighbor Classifier, which uses the Euclidean distance formula.
 addition from a previous notebook
 
 The accuracy score for the Decision tree classifier with the particular split that I obtained was 0.96, which is pretty good.
@@ -19,7 +19,7 @@ Graph visualizations were created using Graphviz
 
 below are some photos of the charts created.
 
-This is some data using striclty the decision tree classifier so we can visualize it with a graphviz tree
+This is some data using strictly the decision tree classifier so we can visualize it with a graphviz tree
 Running the split between the training and testing split once
 
 ### Example of a decision tree created from the classifier.
@@ -43,3 +43,7 @@ This time we will be analyzing the results that the classifier got **wrong** in 
 <img src = "images/image2.png" width = "800">
 
 <img src = "images/graph2_examples.png" width = "900">
+
+As you can see, the decision tree has changed based on the new training data provided. Now instead of looking at pedal length first, we look at pedal width first, which is an interesting change. When looking at flower 11, we can see the thought process of the graph in selecting that it thinks the flower is a versicolor (1), when the flower is actually a virginica (2). Although the tree assigned the wrong label, it was pretty close. The second flower it would've chosen would've been virginica if it weren't versicolor.
+
+When looking at the 42nd flower in the testing data, we can see that this also selected the wrong flower label. It wrongly guessed that it was virginica (2), but the flower was actually a versicolor (1). Although it chose incorrectly, the decision tree was still pretty close.
