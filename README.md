@@ -31,6 +31,10 @@ We will be analyzing the results that the classifier got **right** in trying to 
 
 <img src = "images/graph1_examples.png" width = "900">
 
+As you can see in flower 1 for the first split data, the decision was able to be made only by pedal length and pedal width, eventually leading to the versicolor decision (1). We can verify this by looking at looking at the chart output above when outputting the first element. 
+
+Flower 2 is also properly assigned to virginica (2) simply by pedal length, because it has such big pedal length.
+
 ### This is a NEW decision tree created from the classifier, fed different training data.
 <img src = "images/graph2.png" width = "400">
 
